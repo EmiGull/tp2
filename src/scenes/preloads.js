@@ -7,19 +7,23 @@ export class Preloads extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image ("fondomenu", "public/assets/images/fondomenu.jpg");
+    this.load.image ("menu", "public/assets/images/menu.jpg");
     this.load.image("bomb", "public/assets/images/bomb.png");
-    this.load.image("gameover", "public/assets/images/gameover.png");
-    this.load.image("ground", "public/assets/images/platform.png");
-    this.load.image("ground2", "public/assets/images/platform2.png");
+    this.load.image ("asteroide", "public/assets/images/asteroide.png");
     this.load.image("play", "public/assets/images/play.png");
-    this.load.image("reset", "public/assets/images/reset.png");
-    this.load.image("sky", "public/assets/images/sky.png");
     this.load.image("star", "public/assets/images/star.png");
     this.load.image("star2", "public/assets/images/star2.png");
-    this.load.image("mainmenu_bg","public/assets/images/main_menu_background.png");
     this.load.spritesheet("dude", "public/assets/images/dude.png", {frameWidth: 32, frameHeight: 48,});
-    this.load.audio ("gamesound", "public/assets/sounds/gamesound.mp3");
+    this.load.image("fondo1", "public/assets/images/fondo1.jpg");
+    this.load.image("fondo2", "public/assets/images/fondo2.jpg");
+    this.load.image("fondo3", "public/assets/images/fondo3.jpg");
+    this.load.image("platform3", "public/assets/images/platform3.png");
+    this.load.image("gameover", "public/assets/images/gameover.jpg");
+    this.load.image("winner", "public/assets/images/winner.jpg");
+    this.load.image("reset", "public/assets/images/reset.png");
+    
+    this.load.audio ("game", "public/assets/sounds/game.mp3", "public/assets/sounds/game.ogg", 
+    "public/assets/sounds/game.m4a");
     this.load.audio ("stars", "public/assets/sounds/stars.mp3");
   }
 

@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "fondonivel2.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1531,
+				"h": 982
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "fondo2.jpg",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1529,
+						"h": 980
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1529,
+						"h": 980
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1529,
+						"h": 980
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:29f199301fb34e2ae69cebe2d0202991:d3aaf65c48f9dff0ffcaa9eba846634f:0f10907618493561367519bc3475ae70$"
+	}
+}

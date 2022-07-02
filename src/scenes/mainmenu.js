@@ -10,11 +10,11 @@ export class MainMenu extends Phaser.Scene {
 
     create() {
       // Fondo del menú principal
-      this.add.image(this.cameras.main.centerX, this.cameras.main.centerY, 'fondomenu').setScale(1.1);
+      this.add.image(this.cameras.main.centerX, this.cameras.main.centerY, 'menu').setScale(1.1);
        
       //agregar música
       if (!musica) {
-      musica = this.sound.add('gamesound', { loop: true });
+      musica = this.sound.add('game', { loop: true });
       musica.play();
       }
 
@@ -22,6 +22,6 @@ export class MainMenu extends Phaser.Scene {
       // Boton para comenzar a jugar
       var jugar = this.add.image(this.cameras.main.centerX, this.cameras.main.centerY + this.cameras.main.centerY/3, 'play').setScale(1.1)
       jugar.setInteractive()
-      jugar.on('pointerdown', () => this.scene.start('Play'));
+      jugar.on('pointerdown', () => this.scene.start('Nivel1'));
     };
 }

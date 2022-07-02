@@ -2,10 +2,10 @@ import Button from "../js/button.js";
 
 var score;
 
-// Clase GameOver, donde se crean los botones, el logo y el fondo del menú derrota
-export class GameOver extends Phaser.Scene {
+// Clase Winner, donde se crean los botones, el logo y el fondo del menú derrota
+export class Winner extends Phaser.Scene {
   constructor() {
-    super("GameOver");
+    super("Winner");
   }
 
   init(data) {
@@ -14,27 +14,23 @@ export class GameOver extends Phaser.Scene {
   }
 
   create() {
-    // Fondo del menú derrota
-    this.add
-      .image(
-        this.cameras.main.centerX,
-        this.cameras.main.centerY,
-        "gameover"
-      )
-      .setScale(1.1);
- 
-    
+
+    this.add.image(
+      this.cameras.main.centerX,
+      this.cameras.main.centerY,
+      "winner"
+    );
     // Texto que muestra el puntaje maximo alcanzado
     this.add
       .text(
-        500,100,
+        400,100,
         `Puntaje alcanzado: ${score}`
       )
-      .setOrigin(1.1);
+      .setOrigin(0.5);
 
     // Boton para comenzar a jugar
     var jugar = this.add.image(this.cameras.main.centerX, this.cameras.main.centerY + this.cameras.main.centerY/3, 'reset').setScale(1.1)
     jugar.setInteractive()
-    jugar.on('pointerdown', () => this.scene.start('Nivel1'));
+    jugar.on('pointerdown', () => this.scene.start('MainMenu'));
   }
 }
